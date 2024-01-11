@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio visualizer</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <canvas id="canvas"></canvas>
+      <audio id="audio" controls></audio>
+
+      <div class="inputs">
+        <input type="file" id="fileupload" accept="audio/*" />
+
+        <div class="switcher">
+          <span>Choose visualizer:</span>
+          <select id="switcher">
+            <option checked value="bar">Bar</option>
+            <option value="circle">Circle</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
